@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wearable Healthcare Low-Power SoC & Sensor IP</title>
+<meta name="description" content="System-semiconductor technology analysis of low-power SoC architecture, biosensor IP, and materials/process technologies for wearable healthcare.">
+<link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+<header class="top"><div class="topin"><div class="brand">Subin Joo · Semiconductor Portfolio</div><nav class="nav"><a href="./README.md">README</a><a href="./guide/00_navigation.md">GUIDE</a><a href="https://github.com/soybeanmilk0514-jpg/Wearable-Healthcare-Low-Power-SoC-Sensor-IP">GITHUB</a></nav></div></header>
+<section class="hero"><div class="hero-in">
+<div class="eyebrow">System Semiconductor · Wearable Healthcare · 2026.05–06</div>
+<h1>Wearable Healthcare<br>Low-Power SoC & Sensor IP</h1>
+<p class="summary">웨어러블 헬스케어의 battery·area 제약을 출발점으로 SoC integration, biosensor IP, low-power architecture, transistor leakage control, advanced packaging, and materials engineering을 하나의 개발 관점으로 연결한 기술분석 프로젝트입니다.</p>
+<div class="meta">
+<div><span>Course</span><strong>반도체개발프로세스</strong></div>
+<div><span>Product</span><strong>Wearable healthcare</strong></div>
+<div><span>System focus</span><strong>SoC + Sensor IP</strong></div>
+<div><span>Engineering view</span><strong>System → Device → Materials</strong></div>
+</div>
+<div class="actions"><a class="btn primary" href="./guide/01_project_overview.md">Project Guide</a><a class="btn" href="./results/">Analysis Tables</a><a class="btn" href="./guide/06_materials_process_link.md">Materials Link</a></div>
+</div></section>
+
+<main>
+<section class="visual"><img src="./figures/project-flow.svg" alt="Project flow"><div class="card"><h2>Core question</h2><p>제한된 배터리 안에서 생체 신호를 항상 감지하면서도 전체 시스템을 항상 켜두지 않으려면 어떤 semiconductor architecture와 process/material technology가 필요한가?</p></div></section>
+
+<section class="section"><div class="label">01 · SOC ARCHITECTURE</div><h2>Integration reduces both area and data-movement cost</h2><p>AP/MCU, sensor/AFE, PMIC, RF 같은 기능을 짧은 interconnect 안에서 연결하고, inactive block을 끌 수 있는 SoC architecture를 저전력의 기본 구조로 분석했습니다.</p></section>
+
+<section class="section"><div class="label">02 · SENSOR IP</div><h2>Biosignal front-end determines always-on efficiency</h2><div class="figure"><img src="./figures/sensor-architecture.svg" alt="Wearable sensor architecture"></div><p>PPG, ECG, BIA와 같은 입력은 모두 약한 analog signal을 다루므로 AFE, ADC, buffer, power isolation, event logic이 전체 sensor IP efficiency를 결정합니다.</p></section>
+
+<section class="section"><div class="label">03 · LOW-POWER STACK</div><h2>Architecture와 device physics를 동시에 사용</h2><div class="grid"><div class="metric"><span>Static power</span><strong>LDD · High-k</strong></div><div class="metric"><span>Dynamic power</span><strong>Voltage scaling</strong></div><div class="metric"><span>Idle power</span><strong>Power gating</strong></div><div class="metric"><span>Activity</span><strong>Smart wake-up</strong></div></div></section>
+
+<section class="section"><div class="label">04 · COMPANY EXAMPLES</div><h2>Different layers, same low-power goal</h2><div class="table"><table><thead><tr><th>Example</th><th>Project emphasis</th><th>Low-power angle</th></tr></thead><tbody><tr><td>Samsung</td><td>3 nm GAA + advanced packaging</td><td>electrostatics / interconnect</td></tr><tr><td>Apple</td><td>Custom SiP + AOP</td><td>power gating / vertical optimization</td></tr><tr><td>Qualcomm</td><td>heterogeneous processing + AON</td><td>workload partitioning / on-device AI</td></tr></tbody></table></div><p class="note">This comparison preserves the submitted 2026 report's framing rather than acting as a live product-spec database.</p></section>
+
+<section class="section"><div class="label">05 · MATERIALS & PROCESS</div><h2>Low power is also a materials and packaging problem</h2><p>HfO₂-based High-k는 gate tunneling leakage, TIM/EMC와 고열전도 filler는 SiP thermal path, PDMS/Parylene은 skin-compatible sensor interface와 연결해 분석했습니다.</p></section>
+
+<section class="section"><div class="label">06 · NEXT-GENERATION DIRECTION</div><h2>Always-on intelligence moves toward the sensor edge</h2><p>Raw data를 계속 main processor로 보내기보다 sensor-side AFE와 threshold/event logic에서 먼저 처리하고, 필요한 순간에만 main SoC를 깨우는 구조를 차세대 wearable sensor IP의 중요한 방향으로 정리했습니다.</p></section>
+
+<section class="section"><div class="label">07 · RESOURCES</div><h2>Documentation</h2><div class="resource"><a href="./guide/00_navigation.md"><strong>Project Guide</strong><span>system–IP–device–materials 연결 구조</span></a><a href="./results/low_power_strategy_matrix.csv"><strong>Low-Power Matrix</strong><span>engineering level별 strategy</span></a><a href="./results/sensor_ip_matrix.csv"><strong>Sensor IP Matrix</strong><span>biosignal block별 요구 조건</span></a><a href="./guide/09_limitations_and_lessons.md"><strong>Limitations</strong><span>analysis project의 해석 범위</span></a></div></section>
+</main>
+<footer class="foot">2026 Semiconductor Development Process Coursework Portfolio · Subin Joo</footer>
+</body></html>
