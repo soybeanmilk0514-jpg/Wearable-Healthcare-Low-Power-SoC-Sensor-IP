@@ -1,0 +1,11 @@
+sensor_or_block,measured_signal_or_role,key_frontend_need,low_power_or_signal_strategy
+PPG,optical blood-volume and oxygenation-related response,photodiode current readout,"LED duty cycling;TIA;multi-wavelength control"
+ECG,cardiac bio-potential,very high input impedance,"instrumentation amplifier;common-mode rejection"
+BIA,complex body impedance,current excitation and phase detection,"multi-frequency excitation;phase-sensitive readout"
+AFE,analog biosignal conditioning,low noise and high linearity,"chopper stabilization;high CMRR;high PSRR"
+SAR_ADC,moderate-to-high resolution conversion,sampling accuracy,charge-redistribution architecture
+SigmaDelta_ADC,high-resolution biosignal conversion,low in-band noise,"oversampling;noise shaping"
+FIFO_buffer,local digital storage,avoid continuous main-bus activity,batch transfer and interrupt
+LDO,sensor power conditioning,noise isolation,high PSRR supply regulation
+Piezo_sensor,pressure or pulse-related mechanical signal,low-power mechanical-to-electrical readout,event sensing
+Chemical_sensor,sweat ion or chemical signal,stable electrochemical interface,continuous low-power monitoring
