@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520">
+<rect width="1100" height="520" fill="#fff"/>
+<style>.t{font:700 28px Arial,sans-serif;fill:#172033}.b{fill:#f7f9fc;stroke:#1769e0;stroke-width:3}.h{font:700 20px Arial,sans-serif;fill:#172033;text-anchor:middle}.s{font:15px Arial,sans-serif;fill:#5b6577;text-anchor:middle}.l{stroke:#667085;stroke-width:3}</style>
+<text class="t" x="45" y="55">Wearable biosignal acquisition architecture</text>
+<rect class="b" rx="14" x="55" y="150" width="160" height="150"/><text class="h" x="135" y="195">Sensor</text><text class="s" x="135" y="228">PPG / ECG</text><text class="s" x="135" y="252">BIA / Piezo</text>
+<line class="l" x1="215" y1="225" x2="300" y2="225"/>
+<rect class="b" rx="14" x="300" y="150" width="160" height="150"/><text class="h" x="380" y="195">AFE</text><text class="s" x="380" y="228">low noise</text><text class="s" x="380" y="252">high CMRR / PSRR</text>
+<line class="l" x1="460" y1="225" x2="545" y2="225"/>
+<rect class="b" rx="14" x="545" y="150" width="160" height="150"/><text class="h" x="625" y="195">ADC</text><text class="s" x="625" y="228">SAR</text><text class="s" x="625" y="252">Sigma-Delta</text>
+<line class="l" x1="705" y1="225" x2="790" y2="225"/>
+<rect class="b" rx="14" x="790" y="150" width="160" height="150"/><text class="h" x="870" y="195">Local Logic</text><text class="s" x="870" y="228">FIFO</text><text class="s" x="870" y="252">event detection</text>
+<line class="l" x1="870" y1="300" x2="870" y2="380"/>
+<rect class="b" rx="14" x="770" y="380" width="200" height="90"/><text class="h" x="870" y="420">Main SoC</text><text class="s" x="870" y="447">wake only when needed</text>
+<text class="s" x="535" y="500">Portfolio diagram reconstructed from the submitted project logic.</text>
+</svg>
