@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+<rect width="1200" height="320" fill="#fff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#5b6577"/></marker></defs>
+<style>.b{fill:#f7f9fc;stroke:#1769e0;stroke-width:3}.h{font:700 23px Arial,sans-serif;fill:#172033;text-anchor:middle}.s{font:16px Arial,sans-serif;fill:#5b6577;text-anchor:middle}.l{stroke:#5b6577;stroke-width:4;marker-end:url(#a)}</style>
+<rect class="b" rx="18" x="25" y="80" width="215" height="150"/><text class="h" x="132" y="125">Wearable Need</text><text class="s" x="132" y="162">always-on sensing</text><text class="s" x="132" y="190">battery / area limit</text>
+<line class="l" x1="255" y1="155" x2="330" y2="155"/>
+<rect class="b" rx="18" x="345" y="80" width="210" height="150"/><text class="h" x="450" y="125">SoC</text><text class="s" x="450" y="162">integration</text><text class="s" x="450" y="190">power gating</text>
+<line class="l" x1="570" y1="155" x2="645" y2="155"/>
+<rect class="b" rx="18" x="660" y="80" width="210" height="150"/><text class="h" x="765" y="125">Sensor IP</text><text class="s" x="765" y="162">PPG · ECG · BIA</text><text class="s" x="765" y="190">AFE · ADC</text>
+<line class="l" x1="885" y1="155" x2="960" y2="155"/>
+<rect class="b" rx="18" x="975" y="65" width="195" height="180"/><text class="h" x="1072" y="112">Cross-layer</text><text class="s" x="1072" y="147">High-k · GAA</text><text class="s" x="1072" y="176">TIM / EMC</text><text class="s" x="1072" y="205">Flexible materials</text>
+</svg>
