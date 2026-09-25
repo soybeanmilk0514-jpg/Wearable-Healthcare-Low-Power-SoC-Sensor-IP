@@ -211,3 +211,7 @@ The repository does not claim:
 - original sensor hardware implementation
 
 Its value lies in connecting **product requirement → SoC architecture → sensor IP → low-power device strategy → materials/process technology** within one development-oriented framework.
+
+---
+
+[← Back to Subin Joo's GitHub Portfolio](https://github.com/soybeanmilk0514-jpg)
