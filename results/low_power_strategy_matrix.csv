@@ -1,0 +1,12 @@
+engineering_level,strategy,target_problem,mechanism,project_examples
+system,SoC integration,interconnect energy and area,shorter on-die data path,"AP;MCU;Sensor;AFE;PMIC;RF integration"
+system,power and clock gating,standby and switching power,disable inactive blocks,"main processor sleep;always-on sensor logic"
+system,event-driven smart wake-up,continuous processing waste,wake main system only on meaningful event,"sensor threshold;hardware interrupt"
+circuit_or_ip,low-power AFE,biosignal noise at low current,high input impedance and noise suppression,"instrumentation amplifier;chopper stabilization;high CMRR"
+circuit_or_ip,low-power ADC,conversion energy,architecture matched to resolution need,"SAR ADC;Sigma-Delta ADC"
+device,LDD optimization,drain-side field and leakage,junction profile engineering,"dose;energy;anneal"
+device,High-k gate dielectric,direct tunneling gate leakage,thicker physical dielectric at low EOT,HfO2
+device,advanced gate electrostatics,short-channel leakage,stronger gate control,GAA
+architecture,voltage scaling,dynamic power,V-squared reduction,near-threshold or subthreshold operation
+package,TIM and EMC thermal design,localized heating and reliability,reduce thermal resistance,"TIM;EMC;BN;graphene;CNT"
+sensor_material,flexible interface,skin-device mechanical mismatch,compliant materials and sensor structure,"PDMS;Parylene;flexible electrode;crack sensor"
